@@ -1,0 +1,76 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amazon Ember', sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #131A22;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar_logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.navbar_search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.navbar_searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.navbar_searchIcon {
+    padding: 5px;
+    height: 22px;
+    background-color: #FEBD69;
+}
+
+.navbar_nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar_option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar_optionLineOne {
+    font-size: 10px;
+}
+
+.navbar_optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.navbar_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .navbar_basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
