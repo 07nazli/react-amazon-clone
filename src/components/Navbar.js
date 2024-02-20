@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { IoMdSearch } from "react-icons/io";
-import { MdOutlineAddShoppingCart } from "react-icons/md";
-import { CiLocationOn } from "react-icons/ci";
+import { IoSearchOutline } from "react-icons/io5";
+import { FiShoppingCart } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+import { useStateValue } from "./StateProvider";
 
 const Navbar = () => {
-  const [basket, setBasket] = useState([]);
+  const [{ basket }, dispatch] = useStateValue();
 
   const containerStyle = {
     paddingRight: "1rem",
@@ -29,7 +30,7 @@ const Navbar = () => {
   };
   return (
     <div className="navbar">
-      <Link to="/">
+      <Link className="links" to="/">
         <img
           className="navbar_logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -37,35 +38,38 @@ const Navbar = () => {
         />
       </Link>
 
-      <Link>
+      <Link className="links">
         <div className="navbar_location" style={containerStyle}>
-          <CiLocationOn />
-          <div style={labelStyle}>Deliver to</div>
-          <div style={valueStyle}>United Kingdom</div>
+          <div className="navbar_optionLineOne" style={labelStyle}>
+            Deliver to
+          </div>
+          <div style={valueStyle}>
+            <SlLocationPin className="navbar_locationIcon" /> Turkey
+          </div>
         </div>
       </Link>
 
       <div className="navbar_search">
         <input className="navbar_searchInput" type="text"></input>
-        <IoMdSearch className="navbar_searchIcon" />
+        <IoSearchOutline className="navbar_searchIcon" />
       </div>
       <div className="navbar_nav">
-        <Link to="./login">
+        <Link className="links" to="./login">
           <div className="navbar_option">
             <span className="navbar_optionLineOne">Hello</span>
             <span className="navbar_optionLineTwo">Account & Lists</span>
           </div>
         </Link>
-        <Link to="/">
+        <Link className="links" to="/">
           <div className="navbar_option">
             <span className="navbar_optionLineOne">Return</span>
-            <span className="navbar_optionLineTwo">Orders</span>
+            <span className="navbar_optionLineTwo">& Orders</span>
           </div>
         </Link>
-        <Link to="/checkout">
+        <Link className="links" to="/checkout">
           <div className="navbar_optionBasket">
-            <MdOutlineAddShoppingCart />
-            <span className="navbar_optionLineTwo navbar_basketCount">
+            <FiShoppingCart />
+            <span className="header__optionLineTwo header__basketCount">
               {basket?.length}
             </span>
           </div>

@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -16,15 +16,25 @@
     z-index: 100;
 }
 
+.links {
+    text-decoration: none;
+}
+
 .navbar_logo {
-    width: 100px;
+    width: 110px;
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
 }
 
 .navbar_location {
+    width: 100px;
     color: white;
+}
+
+.navbar_locationIcon {
+    color: white;
+    font-size: 17px;
 }
 
 .navbar_search {
@@ -35,16 +45,17 @@
 }
 
 .navbar_searchInput {
-    height: 12px;
+    height: 20px;
     padding: 10px;
     border: none;
-    width: 65%;
+    width: 700px;
     border-radius: 5px 0px 0px 5px;
 }
 
 .navbar_searchIcon {
+    height: 30px;
+    width: 30px;
     padding: 5px;
-    height: 22px;
     background-color: #FEBD69;
     border-radius: 0px 5px 5px 0px;
 }
@@ -55,28 +66,32 @@
 }
 
 .navbar_option {
+    width: 100px;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: white;
 }
 
 .navbar_optionLineOne {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .navbar_optionLineTwo {
-    font-size: 13px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 800px;
 }
 
 .navbar_optionBasket {
     display: flex;
+    width: 90px;
     align-items: center;
     color: white;
+    font-size: 30px;
   }
   .navbar_basketCount {
+    font-size: 30px;
     margin-left: 10px;
     margin-right: 10px;
   }
