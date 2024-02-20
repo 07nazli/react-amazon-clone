@@ -62,7 +62,7 @@ const Navbar = () => {
         </Link>
         <Link className="links" to="/">
           <div className="navbar_option">
-            <span className="navbar_optionLineOne">Return</span>
+            <span className="navbar_optionLineOne">Returns</span>
             <span className="navbar_optionLineTwo">& Orders</span>
           </div>
         </Link>
