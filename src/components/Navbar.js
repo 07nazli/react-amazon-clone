@@ -69,7 +69,7 @@ const Navbar = () => {
         <Link className="links" to="/checkout">
           <div className="navbar_optionBasket">
             <FiShoppingCart />
-            <span className="header__optionLineTwo header__basketCount">
+            <span className="navbar_optionLineTwo navbar_basketCount">
               {basket?.length}
             </span>
           </div>

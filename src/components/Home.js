@@ -17,7 +17,6 @@ const Home = () => {
             title="iPhone 15"
             price={9499.0}
             image="https://m.media-amazon.com/images/I/41wddqDWz6L._MCnd_AC_.jpg"
-            rating={4}
           />
         </div>
       </div>
