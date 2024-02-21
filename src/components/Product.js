@@ -27,7 +27,7 @@ const Product = ({ id, title, image, price }) => {
           <strong>{price}</strong>
         </p>
       </div>
-      <img src={image} alt="canva" />
+      <img src={image} alt="product_img" />
       <button className="product_button" onClick={addToBasket}>
         Add To Basket
       </button>
