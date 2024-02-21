@@ -12,8 +12,7 @@
   margin-right: 5px;
 }
 .home_image {
-  width: 20px;
-  height: 10px;
+  width: 100%;
   z-index: -1;
   margin-bottom: -150px;
   mask-image: linear-gradient(
