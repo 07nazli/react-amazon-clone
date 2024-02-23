@@ -15,18 +15,18 @@ const Navbar = () => {
   };
 
   const labelStyle = {
-    fontSize: "0.75rem", // text-xs
+    fontSize: "0.75rem",
     "@media (min-width: 1280px)": {
-      fontSize: "0.875rem", // xl:text-sm
+      fontSize: "0.875rem",
     },
   };
 
   const valueStyle = {
-    fontSize: "0.875rem", // text-sm
+    fontSize: "0.875rem",
     "@media (min-width: 1280px)": {
-      fontSize: "1rem", // xl:text-base
+      fontSize: "1rem",
     },
-    fontWeight: "bold", // font-bold
+    fontWeight: "bold",
   };
   return (
     <div className="navbar">

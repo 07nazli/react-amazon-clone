@@ -8,11 +8,14 @@
   }
   
   .checkoutProduct_info > button {
-    background: #f0c14b;
+    background: #f7ca00;
     border: 1px solid;
-    margin-top: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 5px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    cursor: pointer;
   }
   .checkoutProduct_image {
     object-fit: contain;
